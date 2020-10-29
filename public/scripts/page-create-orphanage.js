@@ -87,3 +87,13 @@ function toggleSelect(event) {
   // verificar se o botão é SIM ou NÃO
   input.value = button.dataset.value
 }
+
+function validate(event) {
+  const inputLat = document.querySelector("[name=lat]");
+  const inputLng = document.querySelector("[name=lng]");
+
+  if (inputLat.value == "" || inputLng.value == "") {
+    alert('Selecione um ponto no mapa');
+    event.preventDefault();
+  }
+}

@@ -12,7 +12,7 @@ const icon = L.icon({
     popupAnchor: [170, 2]
 })
 
-function addMarker({id, name, lat, lng}) {
+function addMarker({id, name, lat, lng} = orphanage) {
 
     // create popup overlay
     const popup = L.popup({
